@@ -1,0 +1,388 @@
+<html></html>
+ <head>
+  <title>
+   EduPress - Tests
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .nav {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header .nav a.active {
+            color: #f39c12;
+        }
+        .breadcrumb {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .breadcrumb a {
+            color: #6c757d;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #e7e7e7;
+        }
+        .content h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+        .content .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .content .info .time {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+        }
+        .content .info .time i {
+            margin-right: 5px;
+        }
+        .content .info .details {
+            text-align: right;
+        }
+        .content .info .details p {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+        }
+        .question ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .question ul li {
+            margin-bottom: 10px;
+        }
+        .question ul li input {
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            border-top: 1px solid #e7e7e7;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer .column {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .footer .column h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .footer .column p, .footer .column a {
+            font-size: 14px;
+            color: #6c757d;
+            text-decoration: none;
+        }
+        .footer .column a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin-top: 20px;
+        }
+        .footer .social-icons a {
+            margin-right: 10px;
+            color: #6c757d;
+            font-size: 18px;
+        }
+        .footer .social-icons a:hover {
+            color: #333;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .scroll-up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #f39c12;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #e67e22;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="container">
+    <div class="logo">
+     <img alt="EduPress Logo" height="40" src="https://storage.googleapis.com/a1aa/image/izmjckfzr9SXECcwieg7Acf4nMObZyf3AhTJMt3ojfwfChq4E.jpg" width="40"/>
+     <span>
+      EduPress
+     </span>
+    </div>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/course">Courses</a>
+        <a class="active" href="/stats">Stats</a>
+        <a href="/test_setup">Tests</a>
+        <a href="/chatbot">Chat Bot</a>
+        <a href="/profile">Profile</a>
+        <a href="/login_register">Login / Register</a>
+    </div>
+   </div>
+  </div>
+  <div class="breadcrumb">
+   <div class="container">
+    <a href="#">
+     Homepage
+    </a>
+    &gt;
+    <span>
+     Tests
+    </span>
+   </div>
+  </div>
+  <div class="content">
+   <div class="main-content">
+    <div class="info">
+     <div class="time">
+      <i class="fas fa-clock">
+      </i>
+      Remaining Time
+     </div>
+     <div class="details">
+      <p>
+       Topic: Sample Topic
+      </p>
+      <p>
+       Subject: Sample Subject
+      </p>
+      <p>
+       Total Marks: 100
+      </p>
+     </div>
+    </div>
+    <div class="question">
+     <h3>
+      Question 1: What is the capital of France?
+     </h3>
+     <ul>
+      <li>
+       <input name="q1" type="radio" value="a"/>
+       A) Berlin
+      </li>
+      <li>
+       <input name="q1" type="radio" value="b"/>
+       B) Madrid
+      </li>
+      <li>
+       <input name="q1" type="radio" value="c"/>
+       C) Paris
+      </li>
+      <li>
+       <input name="q1" type="radio" value="d"/>
+       D) Rome
+      </li>
+     </ul>
+    </div>
+    <div class="question">
+     <h3>
+      Question 2: What is 2 + 2?
+     </h3>
+     <ul>
+      <li>
+       <input name="q2" type="radio" value="a"/>
+       A) 3
+      </li>
+      <li>
+       <input name="q2" type="radio" value="b"/>
+       B) 4
+      </li>
+      <li>
+       <input name="q2" type="radio" value="c"/>
+       C) 5
+      </li>
+      <li>
+       <input name="q2" type="radio" value="d"/>
+       D) 6
+      </li>
+     </ul>
+    </div>
+    <div class="question">
+     <h3>
+      Question 3: What is the largest planet in our solar system?
+     </h3>
+     <ul>
+      <li>
+       <input name="q3" type="radio" value="a"/>
+       A) Earth
+      </li>
+      <li>
+       <input name="q3" type="radio" value="b"/>
+       B) Mars
+      </li>
+      <li>
+       <input name="q3" type="radio" value="c"/>
+       C) Jupiter
+      </li>
+      <li>
+       <input name="q3" type="radio" value="d"/>
+       D) Saturn
+      </li>
+     </ul>
+    </div>
+    <button class="submit-button">
+     Submit
+    </button>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="container">
+    <div class="column">
+     <img alt="EduPress Logo" height="40" src="https://storage.googleapis.com/a1aa/image/izmjckfzr9SXECcwieg7Acf4nMObZyf3AhTJMt3ojfwfChq4E.jpg" width="40"/>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     </p>
+    </div>
+    <div class="column">
+     <h3>
+      GET HELP
+     </h3>
+     <p>
+      <a href="#">
+       Contact Us
+      </a>
+     </p>
+     <p>
+      <a href="#">
+       Latest Articles
+      </a>
+     </p>
+     <p>
+      <a href="#">
+       FAQ
+      </a>
+     </p>
+    </div>
+    <div class="column">
+     <h3>
+      CONTACT US
+     </h3>
+     <p>
+      Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA
+     </p>
+     <p>
+      Tel: + (123) 2500-567-8988
+     </p>
+     <p>
+      Mail: supportlms@gmail.com
+     </p>
+     <div class="social-icons">
+      <a href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-pinterest-p">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-xing">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="copyright">
+    Copyright © 2024 LearnPress LMS | Powered by ThimPress
+   </div>
+  </div>
+  <div class="scroll-up">
+   <i class="fas fa-arrow-up">
+   </i>
+  </div>
+ </body>
+</html>

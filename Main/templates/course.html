@@ -1,0 +1,308 @@
+<html></html>
+ <head>
+  <title>
+   EduPress - All Courses
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6600;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header nav a:hover {
+            color: #ff6600;
+        }
+        .header .auth a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header .auth a:hover {
+            color: #ff6600;
+        }
+        .breadcrumb {
+            padding: 20px 40px;
+            background-color: #f1f1f1;
+            font-size: 14px;
+            color: #666;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #666;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 40px;
+        }
+        .container h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        .search-bar .fa-search {
+            margin-left: -30px;
+            color: #ccc;
+        }
+        .course-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .course-item {
+            display: flex;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .course-item img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .course-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .course-content h2 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .course-content a {
+            text-decoration: none;
+            color: #ff6600;
+            font-weight: 500;
+        }
+        .footer {
+            background-color: #f1f1f1;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .column {
+            flex: 1;
+        }
+        .footer .column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .footer .column p, .footer .column a {
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+        .footer .column a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: #666;
+        }
+        .footer .social-icons a:hover {
+            color: #ff6600;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+  </style>
+ </head>
+ <body>
+  <header class="header">
+   <div class="logo">
+    EduPress
+   </div>
+   <nav>
+        <a href="/">Home</a>
+        <a href="/course">Courses</a>
+        <a class="active" href="/stats">Stats</a>
+        <a href="/test_setup">Tests</a>
+        <a href="/chatbot">Chat Bot</a>
+        <a href="/profile">Profile</a>
+        <a href="/login_register">Login / Register</a>
+    </nav>
+  
+  </header>
+  <div class="breadcrumb">
+   <a href="#">
+    Homepage
+   </a>
+   &gt;
+   <a href="#">
+    Course
+   </a>
+  </div>
+  <div class="container">
+   <h1>
+    All Courses
+   </h1>
+   <div class="search-bar">
+    <input placeholder="Search" type="text"/>
+    <i class="fas fa-search">
+    </i>
+   </div>
+   <div class="course-list">
+    <div class="course-item">
+     <img alt="Illustration of people creating an LMS website" height="150" src="https://storage.googleapis.com/a1aa/image/61zwfV7wWUxvHiBFHFpLm77JYk673dIlRjDsCQMQhhoGtUxJA.jpg" width="200"/>
+     <div class="course-content">
+      <h2>
+       Mathematics
+      </h2>
+      <a href="#">
+       View More
+      </a>
+     </div>
+    </div>
+    <div class="course-item">
+     <img alt="Illustration of chemistry theme" height="150" src="https://storage.googleapis.com/a1aa/image/vQv8d2t2EOp0PhJTTqNmfMWdyfPY4F3db3qH7X2j6NeU0SFnA.jpg" width="200"/>
+     <div class="course-content">
+      <h2>
+       Chemistry
+      </h2>
+      <a href="#">
+       View More
+      </a>
+     </div>
+    </div>
+    <div class="course-item">
+     <img alt="Person reading a book" height="150" src="https://storage.googleapis.com/a1aa/image/E2COhDqqOLIMPZBeN52FOzTrhfXGuOZX1MzsTBd6mzkJapiTA.jpg" width="200"/>
+     <div class="course-content">
+      <h2>
+       Physics
+      </h2>
+      <a href="#">
+       View More
+      </a>
+     </div>
+    </div>
+    <div class="course-item">
+     <img alt="Person studying with a laptop" height="150" src="https://storage.googleapis.com/a1aa/image/P4awyX5dbaJJGZZ2Osk7LXdBffpH5orfL5RfPfGmPKNiRLVcC.jpg" width="200"/>
+     <div class="course-content">
+      <h2>
+       Biology
+      </h2>
+      <a href="#">
+       View More
+      </a>
+     </div>
+    </div>
+    <div class="course-item">
+     <img alt="Person typing on a keyboard" height="150" src="https://storage.googleapis.com/a1aa/image/dpXIYfkU86ymWi0DgkfnwxEBGxpPWuOeftB73vTEikU4olKOB.jpg" width="200"/>
+     <div class="course-content">
+      <h2>
+       Social Science
+      </h2>
+      <a href="#">
+       View More
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer class="footer">
+   <div class="column">
+    <div class="logo">
+     EduPress
+    </div>
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+   </div>
+   <div class="column">
+    <h3>
+     GET HELP
+    </h3>
+    <a href="#">
+     Contact Us
+    </a>
+    <br/>
+    <a href="#">
+     Latest Articles
+    </a>
+    <br/>
+    <a href="#">
+     FAQ
+    </a>
+   </div>
+   <div class="column">
+    <h3>
+     CONTACT US
+    </h3>
+    <p>
+     Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA
+    </p>
+    <p>
+     Tel: +1 (123) 456-7890
+    </p>
+    <p>
+     Mail: support@mail.com
+    </p>
+    <div class="social-icons">
+     <a href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fas fa-envelope">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <div class="footer copyright">
+   Copyright © 2024 LearnPress LMS | Powered by ThinPress
+  </div>
+ </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Question {{ q_num }}</title>
+</head>
+<body>
+    <h1>Question {{ q_num }}</h1>
+    
+    <form method="POST" action="/questions/{{ q_num }}">
+        <p>{{ question | safe }}</p>
+
+        <label>
+            <input type="radio" name="answer" value="a" required> A
+        </label><br>
+
+        <label>
+            <input type="radio" name="answer" value="b" required> B
+        </label><br>
+
+        <label>
+            <input type="radio" name="answer" value="c" required> C
+        </label><br>
+
+        <label>
+            <input type="radio" name="answer" value="d" required> D
+        </label><br><br>
+
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<html></html>
+ <head>
+  <title>
+   EduPress - Login / Register
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .nav {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header .nav a.active {
+            color: #ff6600;
+        }
+        .breadcrumb {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .breadcrumb .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #333;
+        }
+        .breadcrumb span {
+            color: #999;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 20px;
+            width: 400px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-container input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-container label {
+            font-size: 14px;
+            color: #333;
+        }
+        .form-container .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container .btn:hover {
+            background-color: #e55d00;
+        }
+        .form-container .forgot-password {
+            text-align: right;
+            font-size: 14px;
+            color: #999;
+        }
+        .footer {
+            background-color: #f8f8f8;
+            padding: 50px 20px;
+            border-top: 1px solid #e5e5e5;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer .column {
+            width: 30%;
+        }
+        .footer .column h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .footer .column p {
+            font-size: 14px;
+            color: #999;
+            line-height: 1.6;
+        }
+        .footer .column a {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .footer .column a:hover {
+            color: #ff6600;
+        }
+        .footer .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .footer .social-icons a {
+            margin-right: 10px;
+            color: #333;
+            font-size: 18px;
+        }
+        .footer .social-icons a:hover {
+            color: #ff6600;
+        }
+        .footer .copyright {
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            margin-top: 20px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="container">
+    <div class="logo">
+     <img alt="EduPress Logo" height="40" src="https://storage.googleapis.com/a1aa/image/3mF28SdREnJMGNDBDqr3afxQs46G4tOpKROyItY9QUw2bVxJA.jpg" width="40"/>
+     <span>
+      EduPress
+     </span>
+    </div>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/course">Courses</a>
+        <a class="active" href="/stats">Stats</a>
+        <a href="/test_setup">Tests</a>
+        <a href="/chatbot">Chat Bot</a>
+        <a href="/profile">Profile</a>
+        <a href="/login_register">Login / Register</a>
+    </div>
+   </div>
+  </div>
+  <div class="breadcrumb">
+   <div class="container">
+    <a href="#">
+     Homepage
+    </a>
+    <span>
+     &gt;
+    </span>
+    <span>
+     Login / Register
+    </span>
+   </div>
+  </div>
+  <div class="main">
+   <div class="form-container">
+    <h2>
+     Already a member? Login
+    </h2>
+    <input placeholder="Email or username*" type="text"/>
+    <input placeholder="Password*" type="password"/>
+    <div>
+     <input id="remember-me" type="checkbox"/>
+     <label for="remember-me">
+      Remember me
+     </label>
+    </div>
+    <button class="btn">
+     Login
+    </button>
+    <div class="forgot-password">
+     <a href="#">
+      Lost your password?
+     </a>
+    </div>
+   </div>
+   <div class="form-container">
+    <h2>
+     Not a member? Register
+    </h2>
+    <input placeholder="Email*" type="email"/>
+    <input placeholder="Username*" type="text"/>
+    <input placeholder="Password*" type="password"/>
+    <input placeholder="Confirm Password*" type="password"/>
+    <button class="btn">
+     Register
+    </button>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="container">
+    <div class="column">
+     <img alt="EduPress Logo" height="40" src="https://storage.googleapis.com/a1aa/image/3mF28SdREnJMGNDBDqr3afxQs46G4tOpKROyItY9QUw2bVxJA.jpg" width="40"/>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     </p>
+    </div>
+    <div class="column">
+     <h3>
+      GET HELP
+     </h3>
+     <a href="#">
+      Contact Us
+     </a>
+     <a href="#">
+      Latest Articles
+     </a>
+     <a href="#">
+      FAQ
+     </a>
+    </div>
+    <div class="column">
+     <h3>
+      CONTACT US
+     </h3>
+     <p>
+      Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA
+     </p>
+     <p>
+      Tel: + (123) 2500-567-8988
+     </p>
+     <p>
+      Mail: supportlms@gmail.com
+     </p>
+     <div class="social-icons">
+      <a href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="copyright">
+    Copyright © 2024 LearnPress LMS | Powered by ThimPress
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,254 @@
+<html></html>
+ <head>
+  <title>
+   EduPress - Tests
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header .nav a:hover {
+            color: #ff6600;
+        }
+        .breadcrumb {
+            padding: 20px 40px;
+            background-color: #f8f8f8;
+            font-size: 14px;
+            color: #666;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #666;
+        }
+        .breadcrumb a:hover {
+            color: #ff6600;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-size: 18px;
+            font-weight: 700;
+            margin-right: 20px;
+            width: 150px;
+            text-align: right;
+        }
+        .form-group input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #ff6600;
+        }
+        .submit-btn {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e65c00;
+        }
+        .footer {
+            background-color: #f8f8f8;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .column {
+            width: 30%;
+        }
+        .footer .column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .footer .column p, .footer .column a {
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+        .footer .column a:hover {
+            color: #ff6600;
+        }
+        .footer .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .footer .social-icons a {
+            color: #666;
+            font-size: 18px;
+        }
+        .footer .social-icons a:hover {
+            color: #ff6600;
+        }
+        .footer .copyright {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #666;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    <span>
+     EduPress
+    </span>
+   </div>
+   <div class="nav">
+    <a href="/">Home</a>
+            <a href="/course">Courses</a>
+            <a class="active" href="/stats">Stats</a>
+            <a href="/test_setup">Tests</a>
+            <a href="/chatbot">Chat Bot</a>
+            <a href="/profile">Profile</a>
+            <a href="/login_register">Login / Register</a>
+   </div>
+  </div>
+  <div class="breadcrumb">
+   <a href="#">
+    Homepage
+   </a>
+  </div>
+  <div class="content">
+   <h1>
+    Tests
+   </h1>
+   <div class="form-group">
+    <label for="topic-name">
+     Topic Name:
+    </label>
+    <input id="topic-name" placeholder="Enter The Topic Name" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="test-time">
+     Test Time:
+    </label>
+    <input id="test-time" placeholder="Enter Test Timing" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="subject-name" >
+     Subject Name:
+    </label>
+    <input id="subject-name" placeholder="Enter Subject Name" type="text"/>
+   </div>
+   <button class="submit-btn" href = "test.html">
+    Submit
+   </button>
+  </div>
+  <div class="footer">
+   <div class="column">
+    <img alt="EduPress Logo" height="40" src="https://storage.googleapis.com/a1aa/image/mR15deAJK11HcyCmeIqJYafpLyeI0elezm8P3L44311fwyUxJA.jpg" width="100"/>
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+   </div>
+   <div class="column">
+    <h3>
+     GET HELP
+    </h3>
+    <p>
+     <a href="#">
+      Contact Us
+     </a>
+    </p>
+    <p>
+     <a href="#">
+      Latest Articles
+     </a>
+    </p>
+    <p>
+     <a href="#">
+      FAQ
+     </a>
+    </p>
+   </div>
+   <div class="column">
+    <h3>
+     CONTACT US
+    </h3>
+    <p>
+     Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA
+    </p>
+    <p>
+     Tel: + (123) 2500-567-8988
+    </p>
+    <p>
+     Mail: supportlms@gmail.com
+    </p>
+    <div class="social-icons">
+     <a href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-pinterest-p">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-xing">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-youtube">
+      </i>
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="footer copyright">
+   Copyright © 2024 LearnPress LMS | Powered by ThimPress
+  </div>
+ </body>
+</html>
