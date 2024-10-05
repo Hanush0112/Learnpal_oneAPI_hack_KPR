@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .header .logo span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6600;
+        }
+        .content {
+            padding: 40px;
+            background-color: #fff;
+            min-height: 400px;
+        }
+        .test-result {
+            margin-top: 20px;
+        }
+        .test-result h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .test-result .question {
+            margin-bottom: 20px;
+        }
+        .test-result .question h3 {
+            font-size: 18px;
+            color: #333;
+        }
+        .test-result .question p {
+            font-size: 16px;
+            color: #666;
+        }
+        .test-result .question .answer {
+            font-weight: bold;
+            color: #ff6600;
+        }
+        .test-result .question .explanation {
+            font-size: 14px;
+            color: #999;
+        }
+        .test-result .score {
+            font-size: 20px;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <span>Test Results</span>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/course">Courses</a>
+        <a class="active" href="/stats">Stats</a>
+        <a href="/test_setup">Tests</a>
+        <a href="/chatbot">Chat Bot</a>
+        <a href="/profile">Profile</a>
+        <a href="/login_register">Login / Register</a>
+    </div>
+    <div class="content">
+        <div class="test-result">
+            <h2>Your Test Results</h2>
+
+            <!-- Loop over the questions, user answers, and explanations using enumerate -->
+            {% for question in questions %}
+                <div class="question">
+                    <h3>Question {{ loop.index }}: {{ question }}</h3>
+                    <p>Your Answer: <span class="answer">{{ user_answers[loop.index0] }}</span></p>
+                    <p>Explanation: <span class="explanation">{{ explanations[loop.index0] }}</span></p>
+                </div>
+            {% endfor %}
+
+
+            <div class="score">
+                You answered {{ user_answers|length }} questions.
+            </div>
+        </div>
+    </div>
+    
+  <div class="footer">
+    <div class="container">
+     <div class="column">
+      <h3>CONTACT US</h3>
+      <p>Address: Velammal Engineering College, Surapet, Chennai-600066</p>
+      <p>Tel: + (123) 2500-567-8988</p>
+      <p>Mail: support@gmail.com</p>
+      <div class="social-icons">
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fab fa-pinterest-p"></i></a>
+       <a href="#"><i class="fab fa-xing"></i></a>
+       <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+     </div>
+    </div>
+    <div class="copyright">
+     Copyright © 2024 LearnPal LPL | Powered by ThinPress
+    </div>
+   </div>
+   
+   <div class="scroll-up">
+    <i class="fas fa-chevron-up"></i>
+   </div>
+  </body>
+ </html>
+ 
+</body>
+</html>

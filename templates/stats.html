@@ -1,0 +1,270 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN PAL</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .logo span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6600;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        .header nav a.active {
+            color: #ff6600;
+        }
+        .breadcrumb {
+            padding: 20px 40px;
+            background-color: #f9f9f9;
+            font-size: 14px;
+            color: #666;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #666;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 40px;
+            background-color: #fff;
+            min-height: 400px;
+        }
+        .footer {
+            background-color: #f9f9f9;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-top: 1px solid #e5e5e5;
+        }
+        .footer .column {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .footer .column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .footer .column p, .footer .column a {
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+        .footer .column a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons a {
+            margin: 0 5px;
+            color: #666;
+            font-size: 18px;
+        }
+        .footer .social-icons a:hover {
+            color: #ff6600;
+        }
+        .footer .copyright {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #999;
+            border-top: 1px solid #e5e5e5;
+        }
+        .chart-container {
+            width: 45%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .chart-container h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img alt="EduPress Logo" height="40" src="https://storage.googleapis.com/a1aa/image/E4TUzgeEjdRuayAlztI9FJIt82uYkAw7KJPfJcviTYQ2IriTA.jpg" width="40"/>
+            <span>LEARN PAL</span>
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/course">Courses</a>
+            <a class="active" href="/stats">Stats</a>
+            <a href="/test_setup">Tests</a>
+            <a href="/chatbot">Chat Bot</a>
+            <a href="/profile">Profile</a>
+            <a href="/login_register">Login / Register</a>
+        </nav>
+    </header>
+    <div class="breadcrumb">
+        <a href="#">Homepage</a> &gt; <span>Chat Bot</span>
+    </div>
+    <div class="content">
+        <div class="chart-container">
+            <h2>Maths</h2>
+            <canvas id="mathsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Physics</h2>
+            <canvas id="physicsChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Chemistry</h2>
+            <canvas id="chemistryChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Social</h2>
+            <canvas id="socialChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Biology</h2>
+            <canvas id="biologyChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Average Scores</h2>
+            <canvas id="averageChart"></canvas>
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="column">
+            <h3>CONTACT US</h3>
+            <p>Address: velammal engineering college,surapet,chennai-600066</p>
+            <p>Tel: + (123) 2500-567-8988</p>
+            <p>Mail: support@gmail.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fas fa-utensils"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer copyright">
+        Copyright © 2024 LearnPal LPL | Powered by ThinPress
+    </div>
+
+    <script>
+        // Single student test scores
+        const studentTestScores = {
+            name: 'Student 1',
+            tests: [
+                { test: 'Test 1', maths: 85, physics: 90, chemistry: 78, social: 88, biology: 92 },
+                { test: 'Test 2', maths: 80, physics: 85, chemistry: 82, social: 78, biology: 88 }
+            ]
+        };
+
+        // Function to create side-by-side histogram for test scores
+        function createTestScoresHistogram(ctx, subject, scores) {
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: scores.map(score => score.test),
+                    datasets: [{
+                        label: subject,
+                        data: scores.map(score => score[subject.toLowerCase()]),
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Function to create pie chart for average scores
+        function createPieChart(ctx, scores) {
+            const totalScores = scores.reduce((acc, score) => {
+                acc.maths += score.maths;
+                acc.physics += score.physics;
+                acc.chemistry += score.chemistry;
+                acc.social += score.social;
+                acc.biology += score.biology;
+                return acc;
+            }, { maths: 0, physics: 0, chemistry: 0, social: 0, biology: 0 });
+
+            const averageScores = {
+                maths: totalScores.maths / scores.length,
+                physics: totalScores.physics / scores.length,
+                chemistry: totalScores.chemistry / scores.length,
+                social: totalScores.social / scores.length,
+                biology: totalScores.biology / scores.length
+            };
+
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Maths', 'Physics', 'Chemistry', 'Social', 'Biology'],
+                    datasets: [{
+                        data: [averageScores.maths, averageScores.physics, averageScores.chemistry, averageScores.social, averageScores.biology],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                }
+            });
+        }
+
+        // Create histograms for each subject
+        createTestScoresHistogram(document.getElementById('mathsChart').getContext('2d'), 'Maths', studentTestScores.tests);
+        createTestScoresHistogram(document.getElementById('physicsChart').getContext('2d'), 'Physics', studentTestScores.tests);
+        createTestScoresHistogram(document.getElementById('chemistryChart').getContext('2d'), 'Chemistry', studentTestScores.tests);
+        createTestScoresHistogram(document.getElementById('socialChart').getContext('2d'), 'Social', studentTestScores.tests);
+        createTestScoresHistogram(document.getElementById('biologyChart').getContext('2d'), 'Biology', studentTestScores.tests);
+
+        // Create pie chart for average scores
+        createPieChart(document.getElementById('averageChart').getContext('2d'), studentTestScores.tests);
+    </script>
+</body>
+</html>

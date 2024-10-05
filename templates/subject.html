@@ -1,0 +1,244 @@
+<html></html>
+ <head>
+  <title>
+   LEARN PAL- Mathematics
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header .nav a.active {
+            color: #ff6b6b;
+        }
+        .header .auth {
+            display: flex;
+            gap: 20px;
+        }
+        .header .auth a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .breadcrumb {
+            padding: 20px 40px;
+            background-color: #f1f1f1;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #333;
+        }
+        .breadcrumb span {
+            color: #999;
+        }
+        .content {
+            padding: 40px;
+        }
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+        }
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 300px;
+        }
+        .search-bar button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            margin-left: -30px;
+            cursor: pointer;
+        }
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .topic {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .topic iframe {
+            width: 100%;
+            height: 200px;
+        }
+        .topic .info {
+            padding: 20px;
+        }
+        .topic .info h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .topic .info p {
+            font-size: 14px;
+            color: #666;
+            margin: 0 0 20px;
+        }
+        .topic .info a {
+            text-decoration: none;
+            color: #ff6b6b;
+            font-weight: 500;
+        }
+        .footer {
+            background-color: #f1f1f1;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .column {
+            flex: 1;
+        }
+        .footer .column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .footer .column p, .footer .column a {
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .footer .column a:hover {
+            color: #ff6b6b;
+        }
+        .footer .social {
+            display: flex;
+            gap: 10px;
+        }
+        .footer .social a {
+            color: #666;
+            font-size: 18px;
+        }
+        .footer .social a:hover {
+            color: #ff6b6b;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    <img alt="EduPress Logo" height="40" src="https://storage.googleapis.com/a1aa/image/ViBAn5tker2elEECfBJuedAuECPADX5FrrUm5ezP3aD9eWq4E.jpg" width="40"/>
+    <span>
+     LEARN PAL
+    </span>
+   </div>
+   <div class="nav">
+    <a href="/">Home</a>
+            <a href="/course">Courses</a>
+            <a class="active" href="/stats">Stats</a>
+            <a href="/test_setup">Tests</a>
+            <a href="/chatbot">Chat Bot</a>
+            <a href="/profile">Profile</a>
+            <a href="/login_register">Login / Register</a>
+   </div>
+  </div>
+  <div class="breadcrumb">
+    <a href="courses.html">Homepage</a> &gt; <span>Course</span>
+</div>
+
+<!-- Course Topics Section -->
+    <section class="course-topics">
+        <h2>Mathematics</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search" />
+        </div>
+        <div class="topic-grid">
+            {% for video in videos %}
+            <div class="topic-item">
+                <h3>{{ video.title }}</h3>
+                <iframe width="100%" height="200" src="{{ video.url }}" frameborder="0" allowfullscreen></iframe>
+                <a href="{{ video.link }}" target="_blank">Watch on YouTube</a>
+                <p>{{ video.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+  <div class="footer">
+  <div class="column">
+    <h3>
+     CONTACT US
+    </h3>
+    <p>
+    Address: velammal engineering college,surapet,chennai-600066
+    </p>
+    <p>
+     Tel: + (123) 2500-567-898
+    </p>
+    <p>
+     Mail: support@gmail.com
+    </p>
+    <div class="social">
+     <a href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fab fa-youtube">
+      </i>
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="footer copyright">
+   <p>
+    Copyright © 2024 LearnPal LPL | Powered by ThinPress
+   </p>
+  </div>
+ </body>
+</html>
